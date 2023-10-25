@@ -5,14 +5,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 import { Link } from 'react-router-dom';
+import { Header } from '../../layout/Header';
+import { Footer } from '../../layout/Footer';
 
 function Login() {
     return (
         <div>
-            <header>
-                <h1>Tienda de Ropa Usada Online</h1>
-                <h2>El Ropero de Lily</h2>
-            </header>
+            <Header /> {/* Agrega el componente Footer al final de tu página */}
 
             <div className="container-login">
                 <h2>Iniciar Sesión</h2>
@@ -45,9 +44,10 @@ function Login() {
                 <div className="btn-register">
                     <a href="/Hello">Registrarse</a>
                     <br></br>
-                    <Link to="/Footer">  Ir a Footer</Link>
+                    <Link to="/Footer">  Ir a Footer ejemplo</Link>
                 </div>
             </div>
+            <Footer /> {/* Agrega el componente Footer al final de tu página */}
         </div>
     );
 }

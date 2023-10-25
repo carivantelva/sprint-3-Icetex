@@ -18,6 +18,7 @@ import { Header } from "./layout/Header";
 
 //Renderizacion
 ReactDOM.createRoot(document.getElementById('root')).render(
+    
 
    <BrowserRouter>
     <React.StrictMode>
