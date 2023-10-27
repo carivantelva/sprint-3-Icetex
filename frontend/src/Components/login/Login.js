@@ -37,12 +37,10 @@ function Login() {
                         />
                     </div>
                     <div className="forgot-password"></div>
-                    <button type="submit" className="btn btn-info">
-                        Iniciar Sesión
-                    </button>
+                    <button type="submit" className="btn btn-info">Iniciar Sesión </button>
                 </form>
                 <div className="btn-register">
-                    <a href="/Hello">Registrarse</a>
+                <a href="/Logup">Registrarse</a> {/* con esta Logup registrarse  */}
                     <br></br>
                     <Link to="/Footer">  Ir a Footer ejemplo</Link>
                 </div>

@@ -20,6 +20,7 @@ export const App = () => {
             <a className="nav-link" href="/">Inicio  </a>
 
           </div>
+          
           <div><a className="nav-link" href="/prendas">Prendas</a></div>
           <form className="d-flex">
 
