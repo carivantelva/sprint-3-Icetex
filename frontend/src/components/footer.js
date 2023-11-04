@@ -1,4 +1,3 @@
-
 import { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -19,3 +18,4 @@ export const Footer= () => {
     );
     
 };
+export default Footer;

@@ -1,21 +1,36 @@
-
 import React from 'react'; // Importa React
-import './login.css'; // Importa el archivo de estilos
+//import './login.css'; // Importa el archivo de estilos
 import 'bootstrap/dist/css/bootstrap.css';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
 
 
-import { Link } from 'react-router-dom';
-import { Header } from '../../layout/Header';
-import { Footer } from '../../layout/Footer';
+
+//import { Link } from 'react-router-dom';
+//import { Header } from 'import { Footer } from '../../layout/Footer';
 
 function Login() {
+
+    function enviarDatos(evento){
+        
+        fetch("/login", {
+            method:"post",
+            headers:{
+                "Content-type": "Aplication/json",
+            },
+            body:JSON.stringify()
+
+        })
+    }
     return (
         <div>
-            <Header /> {/* Agrega el componente Footer al final de tu página */}
+            <Header /> {/* Agrega el componente header al principio de tu página */}
 
             <div className="container-login">
                 <h2>Iniciar Sesión</h2>
-                <form action="#" method="post" id="loginForm">
+
+
+                <form action="/home" method="get" id="loginForm" onSubmit={enviarDatos}>
                     <div className="form-group">
                         <label htmlFor="email">Correo Electrónico:</label>
                         <input
@@ -39,10 +54,12 @@ function Login() {
                     <div className="forgot-password"></div>
                     <button type="submit" className="btn btn-info">Iniciar Sesión </button>
                 </form>
+
+
                 <div className="btn-register">
-                <a href="/Logup">Registrarse</a> {/* con esta Logup registrarse  */}
+                    <a href="/Logup">Registrarse</a> {/* con esta Logup registrarse  */}
                     <br></br>
-                    <Link to="/Footer">  Ir a Footer ejemplo</Link>
+                    {/* <Link to="/Footer">  Ir a Footer ejemplo</Link>*/}
                 </div>
             </div>
             <Footer /> {/* Agrega el componente Footer al final de tu página */}
