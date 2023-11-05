@@ -5,7 +5,8 @@ import "./App.css";
 import { Footer } from './components/footer';
 import { Header } from './components/header';
 import Nav from './components/nav';
-import Products from './components/products';
+import { ProductsApp } from './components/productsApp';
+//import Products from './components/products';
 
 
 
@@ -16,7 +17,8 @@ const App = () => {
 
       <Header />
       <Nav/>
-      <Products Products/>     
+      {/*<Products Products/>   */}  
+      <ProductsApp/>
 
       <Footer />
 
